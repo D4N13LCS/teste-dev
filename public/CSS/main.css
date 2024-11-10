@@ -1,0 +1,94 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+
+    font-family: Lato;
+
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.card {
+    background-color: #f8f9fa;
+}
+
+.card .info {
+    margin-bottom: 20px;
+}
+
+.card .campo {
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+}
+
+.botoes button {
+    width: 100%;
+}
+
+.botoes button:hover {
+    opacity: 0.8;
+}
+
+.botoes button.mb-2 {
+    margin-bottom: 1rem;
+}
+
+
+.save {
+    display: none;
+    background-color: #28a745;
+}
+
+.save:hover {
+    background-color: #218838;
+}
+
+.text-center h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.navbar {
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.pagination .page-link {
+    border-radius: 50%;
+}
+
+.pagination .active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.address-fields {
+    margin-top: 15px;
+    
+}
+
+.address-fields .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.address-fields input {
+    font-size: 0.875rem;
+    width: fit-content;
+}
+
+.modal {
+    position: inherit;
+}
+
+
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}

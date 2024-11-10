@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+
+    font-family: Lato;
+
+    --cor1: #F2F2F2;
+    --cor2: #515151;
+    --cor3: #24BC84;
+    --cor4: #3658BF;
+    --cor5: #2EE6A2;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
