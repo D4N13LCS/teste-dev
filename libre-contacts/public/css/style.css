@@ -1,0 +1,299 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+    text-decoration: none;
+    list-style-type: none;
+
+    --cor1: #60C8A3;
+    --cor2: #C7D0D8;
+    --cor3: #3F444B;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 0px 3px 1px black;
+}
+
+nav.d-flex{
+    justify-self: end;
+
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2.5em;
+}
+
+.pesquisaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 420px;
+}
+
+.pesquisaContainer button{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    background-color: var(--cor3);
+    color: white;
+}
+
+.pesquisaContainer button:hover{
+    cursor: pointer;
+}
+
+.fundoPesquisa{
+    padding: 10px;
+    border-radius: 100px;
+    background-color: var(--cor3);
+    width: 100%;
+}
+
+.fundoPesquisa input{
+    border: none;
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px;
+    
+}
+
+.fundoPesquisa input::placeholder{
+    color: white;
+}
+
+.fundoPesquisa input:focus{
+    outline: none;
+}
+
+.navBtn{
+    border-radius: 5px;
+    padding:2.2px;
+    background-color: var(--cor3);
+    color: white;
+}
+
+.libre{
+    font-weight: 600;
+    color: var(--cor1);
+}
+
+.solucoes{
+    font-weight: 700;
+    color: var(--cor3);
+}
+
+#contatosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contato{
+    display: flex;
+    gap: 1em;
+    background-color: var(--cor3);
+    color: white;
+    padding:  15px;
+    border-radius: 12px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+}
+
+.campo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5px;
+}
+
+.campo input{
+    background-color: #cfc7c8;
+    border: none;
+    border-radius: 100px;
+    color: whitesmoke;
+    padding-left: 10px;
+}
+
+.campo input:focus{
+    outline: none;
+}
+
+.fundoCampo{
+    padding:5px;
+    background-color:  #cfc7c8;
+    border-radius: 100px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    gap:0.25em;   
+}
+
+.Exibir, .Editar, .Deletar{
+    color: white;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor1);
+    border-radius: 6px;
+    padding: 2.5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.save{
+    background-color: var(--cor2);
+    border-radius: 6px;
+    padding: 2.5px;
+}
+
+.Exibir:hover, .Editar:hover, .Deletar:hover{
+    cursor: pointer;
+    background-color: #0db177;
+}
+
+.endereco{
+    display: none;
+    flex-direction: column;
+    
+}
+
+#mainCad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#formCad{
+    display: flex;
+    flex-direction:column;
+    gap: 1.2em;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--cor3);
+}
+
+#containerCad{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.CampoCad{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: white;
+}
+
+.CampoCad input{
+   border-radius: 100px;
+   border: none;
+   padding: 5px;
+}
+
+#cadastrar{
+    border-radius: 6px;
+    padding:2.5px;
+    color: white;
+    background-color: #086e4a;
+    border: 1px solid var(--cor1);
+}
+
+#cadastrar:hover{
+    cursor: pointer;
+    background-color: var(--cor1);
+}
+
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.pagination .page-link {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--cor1);
+    color: #fff;
+}
+
+
+@media  screen and (max-width: 499px) {
+
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    #contatosContainer{
+        width: 300px;
+    }
+
+    .contato{
+        flex-wrap: wrap;
+        
+    }
+
+    .info{
+        flex-wrap: wrap;
+       
+    }
+    
+    .botoes{
+        width: 100%;
+    }
+    
+    nav.d-flex{
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+
+}

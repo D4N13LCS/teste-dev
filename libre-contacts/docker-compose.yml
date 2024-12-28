@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: applibre.dockerfile
+    container_name: app
+    restart: always
+    volumes:
+      - .:/var/www
+    ports:
+      - "8000:8000"
+    networks:
+      - laravel
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: .
+      dockerfile: postgres.dockerfile
+    container_name: db
+    restart: always
+    ports:
+      - "5432:5432"
+    networks:
+      - laravel
+    env_file:
+      - .env
+
+networks:
+  laravel:
+    driver: bridge
