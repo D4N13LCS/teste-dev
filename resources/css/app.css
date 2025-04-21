@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style-type: none;  
+}
+
+.searchbar{
+    color: white;
+}
+
+.searchbar:focus{
+    outline: none;
+}
+
+.searchbar::placeholder{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.filtro{
+    display: flex;
+    position: absolute;
+    top: 7em;
+    z-index: 1;
+}
+
+.opc:hover{
+    cursor: pointer;
+}
+
+.transicao{
+    transition: 3ms ease-in-out;
+}
+
+form .form-control:focus, .form-select:focus {
+    border-color: #157347 !important; 
+    box-shadow: 0 0 0 0.25rem rgba(72, 231, 157, 0.486) !important; 
+  }
